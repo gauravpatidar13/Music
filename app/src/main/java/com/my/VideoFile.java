@@ -2,9 +2,9 @@ package com.my;
 
 public class VideoFile
 {
-	String id,path,name,duration,title,size,dateAdded;
+	String id,path,name,duration,title,size,dateAdded,bucket;
 
-	public VideoFile(String id, String path, String name, String duration, String title, String size, String dateAdded)
+	public VideoFile(String id, String path, String name, String duration, String title, String size, String dateAdded,String bucket)
 	{
 		this.id = id;
 		this.path = path;
@@ -13,9 +13,9 @@ public class VideoFile
 		this.title = title;
 		this.size = size;
 		this.dateAdded = dateAdded;
+		this.bucket=bucket;
 	}
-	public VideoFile()
-	{}
+	
 
 	public void setId(String id)
 	{
@@ -86,4 +86,15 @@ public class VideoFile
 	{
 		return dateAdded;
 	}
+
+	public void setBucket(String bucket)
+	{
+		this.bucket = bucket;
+	}
+
+	public String getBucket()
+	{
+		return bucket;
+	}
+
 }

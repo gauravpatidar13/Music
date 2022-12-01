@@ -2,10 +2,9 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
-    <TextView
+    <android.support.v7.widget.RecyclerView
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent"
-		android:gravity="center"
-		android:text="Folders Fragment"
+		android:id="@+id/frv"
 	/>
 </LinearLayout>
